@@ -1,0 +1,51 @@
+﻿@model JR_Lab3Model.Book
+
+@{
+    /**/
+
+    ViewBag.Title = "Details";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th></th>
+    </tr>
+
+    
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.AuthorFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.AuthorLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Year)
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+    
+
+</table>
